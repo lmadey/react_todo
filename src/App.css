@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body{
   min-height: 100vh;
+  background-image: linear-gradient(120deg, rgb(142, 175, 206), rgb(210, 210, 210));
+  display: flex;
+  justify-content: center;
+}
+.main-contianer{
+  width: 90vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  margin-top: 10vh;
+}
+@media (min-width: 768px) {
+  .main-contianer{
+    width: 65vw;
+  }
+};
+@media (min-width: 992){
+  .main-contianer{
+    width: 55vw;
+  }
+};
+
+/* SHOW FILTEREDITEM ANIMATION*/
+
+.show-filter-item--enter{
+  opacity: 0;
+}
+.show-filter-item--enter-active{
+  opacity: 1;
+  transition: opacity .3s;
+}
+.show-filter-item--enter-done{
+  opacity: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.show-filter-item--exit{
+  opacity: 1;
+}
+.show-filter-item--exit-active{
+  opacity: 0;
+  transition: opacity .3s;
+}
+.show-filter-item--exit-done{
+  opacity: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* SHOW ANIMATION */
+
+.show--enter{
+  transform: scale(.1);
+}
+
+.show--enter-active{
+  transform: scale(1); 
+  transition: transform .3s;
+}
+.show--enter-done{
+  transform: scale(1);
+}
+
+.show--exit{
+  transform: scale(1);
+}
+
+.show--exit-active{
+  transform: scale(.1); 
+  transition: transform .3s;
+}
+.show--exit-done{
+  transform: scale(0);
 }
