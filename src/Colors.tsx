@@ -2,5 +2,7 @@ export const Colors = {
     black: "#000000",
     dark: "#272020",
     white: "#ffffff",
-    button: "#585757"
+    button: "#585757",
+    form: "#7f857f",
+    outline: "#c5bdbd73"
 } 
