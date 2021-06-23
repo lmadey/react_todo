@@ -16,9 +16,14 @@ body{
   flex-wrap: wrap;
   margin-top: 10vh;
 }
-@media (min-width: 768px) {
+@media all and (min-width: 768px) {
   .main-contianer{
-    width: 65vw;
+    width: 70vw;
+  }
+}
+@media all and (min-width: 992px) {
+  .main-contianer{
+    width: 55vw;
   }
 }
 
