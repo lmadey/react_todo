@@ -20,8 +20,6 @@ body{
   .main-contianer{
     width: 65vw;
   }
-};
-@media (min-width: 992){
-  .main-contianer{
-    width: 55vw;
+}
+
   
