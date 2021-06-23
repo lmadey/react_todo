@@ -1,17 +1,16 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import { Colors } from "./Colors";
-import { CSSTransition, SwitchTransition } from "react-transition-group";
 import { TodoContext } from "./TodoContext";
 
 const TodoElement = styled.li`
-    background-color: #c5bdbd29;
+    background-color: ${Colors.outline};
     background-color: ${({todo}) => todo.completed ? "#c5bdbd73" : ""};
     border-bottom: 1px solid ${Colors.black};
     display: flex;
+    height: 40px;
     justify-content: space-around;
     line-height: 40px;
-    height: 40px;
     width: 100%;
     p{  
         color: ${Colors.black};
